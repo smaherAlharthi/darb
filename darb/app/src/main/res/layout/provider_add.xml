@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="مقدم الخدمة"
+            android:textColor="#fff"
+
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="اضافة"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="اسم المزود"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtProviderName_ServiceProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#75cabbb7"
+                    android:gravity="center"
+                    android:hint="اسم المزود"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="موقعك"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtLocation_ServiceProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#75cabbb7"
+                    android:gravity="center"
+                    android:hint="موقعك"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMale_ServiceProvider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textColor="#c7b1b1"
+                        android:text="ذكر" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale_ServiceProvider"
+                        android:layout_width="wrap_content"
+                        android:checked="false"
+                        android:textColor="#af9d9d"
+                        android:layout_height="wrap_content"
+                        android:text="انثى" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="الايميل"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtEmail_ServiceProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#75cabbb7"
+                    android:gravity="center"
+                    android:hint="الايميل"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="رقم المحمول"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtMobileNo_ServiceProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#75cabbb7"
+                    android:gravity="center"
+                    android:hint="رقم المحمول."
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="خط الطول"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtLongitude_ServiceProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#75cabbb7"
+                    android:gravity="center"
+                    android:hint="خط الطول"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="خط العرض"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtLatitude_ServiceProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edtitext_white"
+                    android:gravity="center"
+                    android:hint="خط العرض"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel_ServiceProvider"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white"
+            android:padding="10dp"
+            android:text="الغاء"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSave_ServiceProvider"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white"
+            android:padding="10dp"
+            android:text="حفظ"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>

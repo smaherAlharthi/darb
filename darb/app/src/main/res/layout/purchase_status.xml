@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:background="@drawable/b"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="حالة الطلب"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#92af91"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnFinished_PurchaseStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finished" />
+
+        <Button
+            android:id="@+id/btnCanceled_PurchaseStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Canceled" />
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="#797676" />
+
+        <Button
+            android:id="@+id/btnClose_PurchaseStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close" />
+    </LinearLayout>
+
+</LinearLayout>

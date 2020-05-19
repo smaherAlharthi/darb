@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mnMain"
+            android:title="الرئيسية" />
+        <item
+            android:id="@+id/mnOrder"
+            android:title="طلبات" />
+        <item
+            android:id="@+id/mnCallUs"
+            android:title="اتصل بنا" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/Exit"
+                android:title="تسجيل خروج" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="الخدمات الفرعية"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spSubService_RequestService"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="أولوية الخدمة"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spPriorityService_RequestService"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="#fff" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMale_RequestService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textColor="#ac9898"
+                        android:text="ذكر" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale_RequestService"
+                        android:layout_width="wrap_content"
+                        android:checked="false"
+                        android:textColor="#ac9898"
+                        android:layout_height="wrap_content"
+                        android:text="انثى" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="مقدم الخدمة"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spServiceProvider_RequestService"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="#fff" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="موقع الخدمة"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbInCityCharge_RequestService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="داخل المدينة"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rbOutCityCharge_RequestService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="خارج المدينة"
+                        android:textColor="#fff" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="طريقة الدفع"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spPaymentMethod_RequestService"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.90" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="الخارطة"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="125dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="مجموع الحساب"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtChargeAmount_RequestService"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_log"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSendOrder_RequestService"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ارسال الطلب"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

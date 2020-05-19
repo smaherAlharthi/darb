@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/b"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="رمز التحقق"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtOneCode_VerificationOfNumber"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_log"
+            android:gravity="center"
+            android:padding="10dp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edtTwoCode_VerificationOfNumber"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_log"
+            android:gravity="center"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:maxLength="1"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edtThreeCode_VerificationOfNumber"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_log"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:maxLength="1"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edtFourCode_VerificationOfNumber"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_log"
+            android:gravity="center"
+            android:padding="10dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:maxLength="1"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCheckCode_VerificationOfNumber"
+            android:layout_width="170dp"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/button_white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="التحقق من الرمز"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
